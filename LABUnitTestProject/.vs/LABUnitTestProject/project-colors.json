@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "606401fe-7118-467f-8d17-59865901d06d": {
+      "ProjectGuid": "606401fe-7118-467f-8d17-59865901d06d",
+      "DisplayName": "LABUnitTestProject",
+      "ColorIndex": 0
+    },
+    "0285187c-f9ad-4606-8f21-6febb4e8b0cb": {
+      "ProjectGuid": "0285187c-f9ad-4606-8f21-6febb4e8b0cb",
+      "DisplayName": "MyClassLibrary",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
