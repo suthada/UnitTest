@@ -33,14 +33,15 @@ namespace MyClassLibrary
             double y = y2 - y1;
             double sum = Math.Pow(x,2) + Math.Pow(y,2);
             double result = Math.Sqrt(sum);
-            return Math.Round(result, 2);        
+            return Math.Round(result,2);
         }
         public int getFactorial(int n)
         {
-            int x = n*(n - 1)*(n - 2);
-            return n;
+            if (n<2)
+                return 1;
+            return n * getFactorial(n - 1);
         }
-        public bool checkPassword(string password)
+        public bool Checkpassword(string password)
         {
             return true;
         }
