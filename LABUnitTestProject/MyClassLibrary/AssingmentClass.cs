@@ -41,9 +41,16 @@ namespace MyClassLibrary
                 return 1;
             return n * getFactorial(n - 1);
         }
-        public bool Checkpassword(string password)
-        {
-            return true;
+        public bool Checkpassword(string password1 ,string password2)
+        {   
+            if (password1.Length >= 3 && password2.Length >= 5)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

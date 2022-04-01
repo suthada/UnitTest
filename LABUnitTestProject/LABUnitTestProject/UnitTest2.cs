@@ -12,9 +12,9 @@ namespace LABUnitTestProject
         {
             AssingmentClass assigmentClass = new AssingmentClass();
             int input = 33;
-
             string result = assigmentClass.greadCalculate(input);
             Assert.AreEqual("F", result);
+            
         }
 
         [TestMethod]
@@ -37,20 +37,23 @@ namespace LABUnitTestProject
             AssingmentClass assingmentClass = new AssingmentClass();
             int result = assingmentClass.getFactorial(5);
             Assert.AreEqual(120,result);
+            result = assingmentClass.getFactorial(1);
+            Assert.AreEqual(1, result);
+            result = assingmentClass.getFactorial(0);
+            Assert.AreEqual(1, result);
+            result = assingmentClass.getFactorial(0);
+            Assert.AreEqual(1, result);
         }
 
         [TestMethod]
         public void Test_Assignment_4()
         {
             AssingmentClass assingmentClass = new AssingmentClass();
-            bool password = assingmentClass.CheckPassword("abc12345");
-            Assert.AreEqual("True", password);
-            password = assingmentClass.CheckPassword("abc123");
-            Assert.AreEqual("False", password);
-            password = assingmentClass.CheckPassword("abcdefgh");
-            Assert.AreEqual("False", password);
-            password = assingmentClass.CheckPassword("12345678");
-            Assert.AreEqual("False", password);
+            string Password1 = "abc";
+            int Password2 = 123;
+            string Password22 = Convert.ToString(Password1);
+            bool password = assingmentClass.Checkpassword(Password1, Password22);
+            Assert.AreEqual(false,password);
         }
     }
 }
